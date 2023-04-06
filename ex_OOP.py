@@ -80,3 +80,18 @@ s=laptop()
 s.message()
 s.call()
 s.code()
+
+class A:
+    def display(self):
+        print("Im in class A")
+class B(A):
+    def display1(self):
+        print("Im in class B")
+class C(B):
+    def display2(self):
+        print("Im in class C")
+
+ob1=C()
+ob1.display()
+ob1.display1()
+ob1.display2()                        
